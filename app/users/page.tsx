@@ -12,6 +12,8 @@ const Users = async () => {
     const users = await res.json();
     return (
         <>
+            <Link href={"/"}><h2>Home page</h2></Link>
+            <Link href={"/users/create"}><h2>Creane New</h2></Link>
             <h1>Users page</h1>
             <main className='flex flex-wrap gap-2 my-4'>
                 {users.map((user: User) => {
